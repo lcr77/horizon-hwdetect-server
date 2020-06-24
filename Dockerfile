@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:9 AS build
 WORKDIR /
-ADD package-lock.json .
+ADD package.json .
 RUN npm install
 ADD . .
 
